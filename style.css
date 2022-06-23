@@ -1,1 +1,86 @@
+/* default to border-box */
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  /* adjust typography defaults */
+  body {
+    margin: 1rem;
+    font-family: sans-serif;
+    line-height: 1.5;
+  }
+  
+  /* images and videos max out at full width */
+  img,
+  video {
+    height: auto;
+    max-width: 100%;
+  }
 
+  /* calculator styling */
+    .calculator-layout{
+        display: flex;
+        flex-direction: column;
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: right;
+    }
+
+    .result-container{
+        display: flex;
+    }
+
+    .result{
+
+    }
+
+    .num-layout{
+        display: flex;
+    }
+
+    .num-op-content{
+        flex-basis: 25%;
+        font-size: 1.5em;
+        text-align: center;
+        padding: 40px;
+        border: 1px solid black;
+        background: -webkit-linear-gradient(top, #d2d2d2, #ddd);
+        cursor: pointer;
+    }
+
+    .cals-2-col{
+        display: flex;
+    }
+
+    .num-column{
+        display: flex;
+    }
+
+    .num-content{
+        flex-basis: 25%;
+        font-size: 1.5em;
+        text-align: center;
+        padding: 40px;
+        border: 1px solid black;
+        background: -webkit-linear-gradient(top, #d2d2d2, #ddd);
+        cursor: pointer;
+    }
+
+    .equal-op-column{
+        display: flex;
+    }
+
+    .equal-op-content{
+        flex-basis: 25%;
+        font-size: 1.5em;
+        text-align: center;
+        padding: 40px;
+        border: 1px solid black;
+        background: -webkit-linear-gradient(top, #d2d2d2, #ddd);
+        cursor: pointer;
+    }
