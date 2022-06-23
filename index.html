@@ -1,55 +1,54 @@
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="https://glitch.com/favicon.ico" />
-    
-        <title>BASIC Calculator</title>
-    
-        <!-- import the webpage's stylesheet -->
-        <link rel="stylesheet" href="style.css" />
-    
-        <!-- import the webpage's javascript file -->
-        <script src="script.js" defer></script>
-      </head>
-<body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <title>BASIC Calculator</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="script.js"></script>
+  </head>
+  <body>
     <div class="calculator-layout">
-        <div class="result-container">
-            <h4 class="result">0</h4>
+      <div class="result-container">
+        <p id="result">0</p>
+      </div>
+      <div class="num-layout">
+        <div class="num-content operator clear">AC</div>
+        <div class="num-content operator">←</div>
+        <div class="num-content operator negative">+/-</div>
+        <div class="num-content operator">÷</div>
+      </div>
+      
+        <div class="num-layout">
+          <div class="num-content">7</div>
+          <div class="num-content">8</div>
+          <div class="num-content">9</div>
+          <div class="num-content operator">x</div>
         </div>
         <div class="num-layout">
-            <div class="num-op-content">+</div>
-            <div class="num-op-content">-</div>
-            <div class="num-op-content">x</div>
-            <div class="num-op-content">÷</div>
+          <div class="num-content">4</div>
+          <div class="num-content">5</div>
+          <div class="num-content">6</div>
+          <div class="num-content operator">－</div>
         </div>
-        <div class="cals-2-col">
-            <div class="num-row-column">
-                <div class="num-layout">
-                    <div class="num-content">7</div>
-                    <div class="num-content">8</div>
-                    <div class="num-content">9</div>
-                </div>
-                <div class="num-layout">
-                    <div class="num-content">4</div>
-                    <div class="num-content">5</div>
-                    <div class="num-content">6</div>
-                </div>
-                <div class="num-layout">
-                    <div class="num-content">1</div>
-                    <div class="num-content">2</div>
-                    <div class="num-content">3</div>
-                </div>
-                <div class="num-layout">
-                    <div class="num-content">C</div>
-                    <div class="num-content">0</div>
-                    <div class="num-content">.</div>
-                </div>
-            </div>
-            <div class="equal-op-column">
-                <div class="equal-op-content">=</div>
-            </div>
+        <div class="num-layout">
+          <div class="num-content">1</div>
+          <div class="num-content">2</div>
+          <div class="num-content">3</div>
+          <div class="num-content operator">+</div>
         </div>
-    </div>
-</body>
+        <div class="num-layout">
+          <div class="num-content">%</div>
+          <div class="num-content">0</div>
+          <div class="num-content">.</div>
+          <div class="num-content equalsign equals">=</div>
+        </div>
+      </div>
+  </body>
 </html>
