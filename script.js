@@ -51,19 +51,19 @@ const calculator = {
    
     let result = 0;
     if (calculator.operator === '+') {
-      result = parseInt(calculator.firstNumber) + parseInt(calculator.displayNumber);
+      result = parseFloat(calculator.firstNumber) + parseFloat(calculator.displayNumber);
     } 
     else if (calculator.operator === 'x'){
-        result = parseInt(calculator.firstNumber) * parseInt(calculator.displayNumber);
+        result = parseFloat(calculator.firstNumber) * parseFloat(calculator.displayNumber);
     }
     else if (calculator.operator === '÷'){
-        result = parseInt(calculator.firstNumber) / parseInt(calculator.displayNumber);
+        result = parseFloat(calculator.firstNumber) / parseFloat(calculator.displayNumber);
     }
     else if (calculator.operator === '%'){
-        result = (parseInt(calculator.firstNumber) / parseInt(calculator.displayNumber)) / 100;
+        result = (parseFloat(calculator.firstNumber) / parseFloat(calculator.displayNumber)) / 100;
     }
     else {
-      result = parseInt(calculator.firstNumber) - parseInt(calculator.displayNumber);
+      result = parseFloat(calculator.firstNumber) - parseFloat(calculator.displayNumber);
     }
    
     calculator.displayNumber = result;
