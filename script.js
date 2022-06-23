@@ -53,11 +53,14 @@ const calculator = {
     if (calculator.operator === '+') {
       result = parseInt(calculator.firstNumber) + parseInt(calculator.displayNumber);
     } 
-    if (calculator.operator === 'x'){
-        result = parseInt(calculator.firstNumber) + parseInt(calculator.displayNumber);
+    else if (calculator.operator === 'x'){
+        result = parseInt(calculator.firstNumber) * parseInt(calculator.displayNumber);
     }
-    if (calculator.operator === '÷'){
-        result = parseInt(calculator.firstNumber) % parseInt(calculator.displayNumber);
+    else if (calculator.operator === '÷'){
+        result = parseInt(calculator.firstNumber) / parseInt(calculator.displayNumber);
+    }
+    else if (calculator.operator === '%'){
+        result = (parseInt(calculator.firstNumber) / parseInt(calculator.displayNumber)) / 100;
     }
     else {
       result = parseInt(calculator.firstNumber) - parseInt(calculator.displayNumber);
