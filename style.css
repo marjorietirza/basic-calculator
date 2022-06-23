@@ -55,10 +55,12 @@ html {
 
     .cals-2-col{
         display: flex;
+        flex-direction: column;
     }
 
-    .num-column{
+    .num-row-column{
         display: flex;
+        flex-direction: row;
     }
 
     .num-content{
