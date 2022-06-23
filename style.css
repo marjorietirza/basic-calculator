@@ -87,15 +87,13 @@ html {
       border-radius: 100px;
     }
 
-    .num-op-content:hover,.num-content:hover{
+    .num-content:hover{
         background-color: #f0f0f0;
     }
 
 /* responsive styling */
 @media screen and (max-width: 513px) {
-  .num-op-content,
-  .num-content,
-  .num-content-equal
+  .num-content
   {
        padding: 10px;
       font-size:1.2em;

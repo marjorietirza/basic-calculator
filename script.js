@@ -1,3 +1,4 @@
+console.log("Just checking if this works");
 const calculator = {
     displayNumber: '0',
     operator: null,
